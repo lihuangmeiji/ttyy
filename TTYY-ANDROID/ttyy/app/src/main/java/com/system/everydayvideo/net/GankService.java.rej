@@ -1,0 +1,10 @@
+diff a/ttyy/app/src/main/java/com/system/everydayvideo/net/GankService.java b/ttyy/app/src/main/java/com/system/everydayvideo/net/GankService.java	(rejected hunks)
+@@ -99,6 +99,6 @@
+     Flowable<BaseResponse> getLogOutCode(@Body RequestBody request);
+ 
+     //分享
+-    @GET(Constant.USERSHARE)
+-    Flowable<UserShareBean> getUserShare();
++    @POST(Constant.USERSHARE)
++    Flowable<UserShareBean> getUserShare(@Body RequestBody request);
+ }

@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tabyd</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/tabyd</item>
+    </style>
+
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/tabyd</item>
+        <item name="colorPrimaryDark">@color/colorVip</item>
+        <item name="colorAccent">@color/tabyd</item>
+    </style>
+
+
+
+    <style name="tab" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <style name="SplashTheme" parent="AppTheme">
+
+        <!-- 闪屏背景，可用图片 -->
+        <item name="android:windowBackground">@mipmap/flicker_screen</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light">
+        <!-- 设置 toolbar 溢出菜单的文字的颜色 -->
+        <item name="android:textColor">@color/black</item>
+        <!-- 设置toolbar 溢出菜单的字体大小-->
+        <item name="android:textSize">16sp</item>
+        <!-- 设置 显示在toobar上菜单文字的颜色 -->
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <!-- 加载框 -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

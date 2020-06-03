@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="readed">#ffc05500</color>
+    <color name="gray_slight">#FFE6E6E6</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray_text">#686868</color>
+    <color name="divide">#E7E8E9</color>
+    <color name="tabyd">#FE9402</color>
+    <color name="tabwd">#999999</color>
+    <color name="homevideotext">#333333</color>
+    <color name="textProfileGray">#BDBCBC</color>
+    <color name="colorVip">#F28F18</color>
+    <color name="colorVipMoney">#744207</color>
+    <color name="transentorder">#00000000</color>
+</resources>

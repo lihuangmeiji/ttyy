@@ -1,0 +1,97 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        defaultKeystoreConfig {
+            keyAlias 'ttyy'
+            keyPassword '123qweASD!@#'
+            storeFile file('../ttyy_release.jks')
+            storePassword '123qweASD!@#'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.system.everydayvideo"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1005
+        versionName '1.0.05'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                MTA_APPKEY : "A83B13TEERTA",
+                MTA_CHANNEL: "tiantian"
+        ]
+    }
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['src/main/libs']
+            jni.srcDirs = []
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/']
+        }
+    }
+    /*buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.defaultKeystoreConfig
+        }
+    }*/
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            signingConfig signingConfigs.defaultKeystoreConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            signingConfig signingConfigs.defaultKeystoreConfig
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    compile 'com.github.franmontiel:PersistentCookieJar:v1.0.1'
+    annotationProcessor rootProject.ext.dependencies["butterknife-apt"]
+    compile rootProject.ext.dependencies["avi-loading"]
+    implementation project(':mvpTy')
+    //广告条轮播
+    compile rootProject.ext.dependencies["banner"]
+    //圆形图像
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.jwenfeng.pulltorefresh:library:1.2.7'
+    compile 'com.github.hotchemi:permissionsdispatcher:2.3.1'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.3.1'
+    //mta 3.4.7 稳定版
+    compile 'com.qq.mta:mta:3.4.7-Release'
+    //mid jar包 必须添加
+    compile 'com.tencent.mid:mid:4.06-Release'
+
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+
+    //compile 'com.belerweb:pinyin4j:2.5.0'
+
+    implementation files('libs/crasheye-2.2.5.jar')
+
+}

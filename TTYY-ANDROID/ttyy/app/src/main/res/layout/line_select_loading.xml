@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rel_lin_selet_orderload"
+    android:paddingLeft="50dip"
+    android:paddingRight="50dip"
+    android:background="@color/transentorder">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/tv_qx"
+            android:background="@drawable/white_background">
+            <TextView
+                android:layout_width="match_parent"
+                android:text="线路选择"
+                android:textSize="@dimen/textdx_16"
+                android:textColor="@color/textProfileGray"
+                android:gravity="center"
+                android:layout_height="50dip"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/textProfileGray"></View>
+            <cn.droidlover.xrecyclerview.XRecyclerView
+                android:id="@+id/rv_lin_selet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dip"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_qx"
+            android:layout_marginTop="10dip"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:text="取消"
+            android:textSize="@dimen/textdx_16"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dip"
+            android:background="@drawable/white_background"/>
+</RelativeLayout>

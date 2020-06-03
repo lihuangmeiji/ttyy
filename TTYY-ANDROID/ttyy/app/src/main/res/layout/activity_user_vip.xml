@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorVip"
+    tools:context=".ui.user.UserVipActivity">
+    <include layout="@layout/layout_toolbar" />
+    <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+        android:id="@+id/prl_uservip"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+        <cn.droidlover.xrecyclerview.XRecyclerView
+            android:id="@+id/user_vip_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            app:recyclerBackgroundColor="@color/transparent"
+            app:recyclerScrollbarNone="true"
+            app:recyclerScrollbarStyle="outsideOverlay" />
+    </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+</LinearLayout>

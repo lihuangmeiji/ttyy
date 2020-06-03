@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">天天剧场</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homevideotext">测试</string>
+    <string name="tv1">我的服务</string>
+    <string name="tv2">兑换码</string>
+    <string name="tv3">观看记录</string>
+    <string name="tv4">分享有奖</string>
+    <string name="tv5">常见问题</string>
+    <string name="tv6">清除缓存</string>
+    <string name="tv7">关于我们</string>
+    <string name="tv8">请输入账号</string>
+    <string name="tv9">请输入密码</string>
+    <string name="tv10">马上登录</string>
+    <string name="tv11">注册账号</string>
+    <string name="tv12">找回密码</string>
+    <string name="tv13">请输入手机号</string>
+    <string name="tv14">请设置密码</string>
+    <string name="tv15">请确认密码</string>
+    <string name="tv16">立即注册</string>
+    <string name="tv17">获取验证码</string>
+    <string name="tv18">请输入验证码</string>
+    <string name="tv19">请输入新密码</string>
+    <string name="tv20">确认重置</string>
+    <string name="tv21">购买会员</string>
+    <string name="tv22">¥22</string>
+    <string name="tv23">立即购买</string>
+    <string name="tv24">立即登录</string>
+    <string name="tv25">版本更新</string>
+    <string name="tv26">取消</string>
+    <string name="tv27">确认</string>
+    <string name="tv28">Android8.0安装应用需要打开未\n知来源权限，请去设置中开启权限</string>
+    <string name="tv29">兑换码</string>
+    <string name="tv30">请输入兑换码</string>
+    <string name="tv31">退出登录</string>
+    <string name="tv32">复制地址</string>
+    <string name="tv33">长按保存图片</string>
+    <string name="tv34">免责声明</string>
+    <string name="tv35">本站所有视频均来自互联网，版权归原创者所有，如果侵犯了您的权益，请通知我们，我们将会在3个工作日内删除其侵权内容，谢谢合作。</string>
+    <string name="tv36">官方群组</string>
+    <string name="tv37">专属客服</string>
+    <string name="tv38">复制</string>
+    <string name="tv39">邀请码</string>
+    <string name="tv40">输入邀请码</string>
+    <string name="title_activity_home_detailed">Sign in</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+</resources>

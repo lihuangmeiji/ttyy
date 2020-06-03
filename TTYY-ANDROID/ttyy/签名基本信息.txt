@@ -1,0 +1,2 @@
+alise: ttyy
+password: 123qweASD!@#
